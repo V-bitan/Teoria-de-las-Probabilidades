@@ -114,3 +114,30 @@ Aunque las letras aparecen en un orden diferente en los casos de \( AB \) y \( B
 ### Conclusión
 
 Este es un ejemplo de cómo el espacio muestral puede estar compuesto por un número limitado de resultados posibles cuando los elementos se extraen simultáneamente y el orden no importa. En este caso, hay solo 3 posibles resultados: **dos bolas blancas**, **una bola blanca y una azul**, y **dos bolas azules**.
+
+import matplotlib.pyplot as plt
+import networkx as nx
+
+# Crear el grafo dirigido
+G = nx.DiGraph()
+
+# Añadir los nodos (espacio muestral y urna)
+G.add_node("Urna", pos=(0, 1))
+G.add_node("AA", pos=(-2, 0))
+G.add_node("AB", pos=(0, 0))
+G.add_node("BB", pos=(2, 0))
+
+# Conectar los nodos con flechas
+G.add_edge("Urna", "AA")
+G.add_edge("Urna", "AB")
+G.add_edge("Urna", "BB")
+
+# Dibujar el grafo
+pos = nx.get_node_attributes(G, 'pos')
+plt.figure(figsize=(8, 6))
+nx.draw(G, pos, with_labels=True, node_size=2000, node_color='lightblue', font_size=12, font_weight='bold', arrowsize=20)
+
+# Mostrar el diagrama
+plt.title("Diagrama del Experimento de Extracción de Bolas")
+plt.show()
+
