@@ -1,0 +1,116 @@
+Caso 1 - Tirar una moneda: Puedes crear un archivo de texto (.txt) o incluso un archivo Markdown (.md) para darle formato.
+Ejemplo de cómo podría verse el contenido en un archivo Markdown (caso_moneda.md):
+
+# Caso 1: Tirar una moneda
+
+Cuando tiramos una moneda, existen dos posibles resultados: cara o cruz. Sin embargo, hasta que no realicemos el lanzamiento, no podemos predecir cuál de los dos ocurrirá, ya que es un evento aleatorio.
+
+## Espacio muestral
+El conjunto de todos los resultados posibles es:
+$$ S = \{ \text{cara}, \text{cruz} \} $$
+
+## Probabilidades
+- La probabilidad de obtener **cara** es \( P(\text{cara}) = \frac{1}{2} \)
+- La probabilidad de obtener **cruz** es \( P(\text{cruz}) = \frac{1}{2} \)
+
+Este es un caso simple donde se aplica la teoría de probabilidades para manejar la incertidumbre de los eventos aleatorios.
+
+# Caso 3: Experimentos aleatorios con más de un suceso elemental
+
+En este caso, estamos trabajando con dos experimentos aleatorios diferentes:
+
+1. **Tirar una moneda**: El resultado puede ser cara o cruz.
+2. **Observar el sexo de un niño al nacer**: El resultado puede ser hombre o mujer.
+
+### Espacios muestrales y sucesos elementales
+
+#### 1. Espacio muestral para el experimento de la moneda
+
+Para el **experimento de tirar una moneda**, el espacio muestral está compuesto por dos resultados posibles:
+
+- **E1**: El espacio muestral es \( E1 = \{ \text{cara}, \text{cruz} \} \)
+  
+Los sucesos elementales correspondientes a este espacio muestral son:
+
+- \( e1 = \text{salió cara} \)
+- \( e2 = \text{salió cruz} \)
+
+#### 2. Espacio muestral para el experimento de observar el sexo de un niño al nacer
+
+Para el **experimento de observar el sexo de un niño**, el espacio muestral está compuesto por dos resultados posibles:
+
+- **E2**: El espacio muestral es \( E2 = \{ H, M \} \), donde:
+  - \( H = \text{nació hombre} \)
+  - \( M = \text{nació mujer} \)
+
+Los sucesos elementales correspondientes a este espacio muestral son:
+
+- \( e1 = \text{nació hombre} \)
+- \( e2 = \text{nació mujer} \)
+
+### Resumen
+
+Estos ejemplos muestran cómo los **espacios muestrales** y los **sucesos elementales** se pueden definir para diferentes experimentos aleatorios. Cada experimento tiene un conjunto de resultados posibles (el espacio muestral), y cada uno de esos resultados se considera un suceso elemental. En el caso de la moneda, hay dos posibles resultados (cara o cruz), y en el caso del sexo del bebé, hay dos posibles resultados (hombre o mujer).
+
+Este es un principio básico de la teoría de probabilidades: cualquier experimento aleatorio tiene un conjunto de resultados posibles, y cada uno de esos resultados es un suceso elemental.
+
+# Caso 4: Lanzar dos dados
+
+En este caso, el experimento consiste en lanzar **dos dados** una sola vez. Los resultados posibles se pueden visualizar como pares ordenados (i, j), donde **i** representa el resultado del primer dado y **j** el del segundo dado.
+
+### Espacio muestral
+
+El espacio muestral **E** del experimento de lanzar dos dados consiste en todos los posibles resultados que se pueden obtener. En total, hay 36 resultados posibles, ya que cada dado tiene 6 caras, y el primer dado puede combinarse con cualquier resultado del segundo dado.
+
+El espacio muestral es el siguiente:
+
+$$ E = \{ (1,1), (1,2), (1,3), (1,4), (1,5), (1,6), (2,1), (2,2), (2,3), (2,4), (2,5), (2,6), (3,1), (3,2), (3,3), (3,4), (3,5), (3,6), (4,1), (4,2), (4,3), (4,4), (4,5), (4,6), (5,1), (5,2), (5,3), (5,4), (5,5), (5,6), (6,1), (6,2), (6,3), (6,4), (6,5), (6,6) \} $$
+
+Cada elemento de este conjunto representa un posible resultado, donde el primer número corresponde al resultado del primer dado y el segundo al del segundo dado. Por ejemplo, \( (1,1) \) significa que en el primer dado salió un 1 y en el segundo dado también salió un 1, y \( (1,2) \) significa que en el primer dado salió un 1 y en el segundo dado un 2.
+
+### Variaciones con repetición
+
+Este experimento puede ser modelado como un problema de **variaciones con repetición**. Si tenemos un conjunto de 6 elementos (los posibles resultados de un dado: 1, 2, 3, 4, 5, 6), y queremos formar grupos de 2 (representando los dos dados), el número total de combinaciones posibles es el número de **variaciones con repetición** que se pueden formar.
+
+La fórmula para calcular las variaciones con repetición es:
+
+$$ V_{n,k} = n^k $$
+
+Donde:
+- \( n \) es el número de elementos del conjunto (en este caso, 6, porque hay 6 caras en el dado).
+- \( k \) es el número de elementos de cada grupo (en este caso, 2, porque estamos lanzando 2 dados).
+
+Por lo tanto, el número total de posibles combinaciones es:
+
+$$ V_{6,2} = 6^2 = 36 $$
+
+Esto nos da los 36 resultados posibles que vimos anteriormente.
+
+### Conclusión
+
+En resumen, al lanzar dos dados, el espacio muestral tiene 36 resultados posibles, y el número de combinaciones posibles se puede calcular usando la fórmula de variaciones con repetición. Cada uno de estos 36 resultados tiene la misma probabilidad de ocurrir si los dados son justos.
+
+# Caso 5: Extracción de bolas de una urna
+
+Supongamos que tenemos una **urna** con 3 bolas blancas y 3 bolas azules. Vamos a definir un experimento y determinar el espacio muestral asociado.
+
+### Experimento
+
+El experimento consiste en **extraer dos bolas simultáneamente** de la urna. Dado que estamos extrayendo las bolas simultáneamente, el orden en que se extraen no importa. Esto significa que si extraemos una bola blanca y una azul, los resultados "AB" y "BA" son equivalentes.
+
+### Espacio muestral
+
+El **espacio muestral** \( E \) para este experimento está compuesto por los siguientes posibles resultados:
+
+$$ E = \{ AA, AB, BB \} $$
+
+Donde:
+- \( AA \) significa que se extrajeron **dos bolas blancas**.
+- \( AB \) significa que se extrajo **una bola blanca y una bola azul**.
+- \( BB \) significa que se extrajeron **dos bolas azules**.
+
+Aunque las letras aparecen en un orden diferente en los casos de \( AB \) y \( BA \), como las bolas se extraen simultáneamente, el orden no es relevante. Es decir, \( AB \) y \( BA \) representan el mismo resultado, que es **una bola blanca y una azul**.
+
+### Conclusión
+
+Este es un ejemplo de cómo el espacio muestral puede estar compuesto por un número limitado de resultados posibles cuando los elementos se extraen simultáneamente y el orden no importa. En este caso, hay solo 3 posibles resultados: **dos bolas blancas**, **una bola blanca y una azul**, y **dos bolas azules**.
